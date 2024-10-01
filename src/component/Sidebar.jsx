@@ -43,13 +43,13 @@ const Sidebar = ({search,setSearch,filter,setFilter}) => {
       <div className="footer ml-2">
       <h2 className='font-semibold'>Let's Connect</h2>
        <div className="socials mt-2 flex items-center justify-start gap-2">
-        <a href="#" className='inline-block border p-1 rounded-full bg-orange-400 text-white'>
+        <a href="https://github.com/raikiran07" target='_blank' className='inline-block border p-1 rounded-full bg-orange-400 text-white'>
           <GithubLogo/>
         </a>
-        <a href="#" className='inline-block border p-1 rounded-full bg-orange-400 text-white'>
+        <a href="https://www.linkedin.com/in/kiran-rai-50b836196/" target='_blank' className='inline-block border p-1 rounded-full bg-orange-400 text-white'>
           <LinkedinLogo/>
         </a>
-        <a href="#" className='inline-block border p-1 rounded-full bg-orange-400 text-white'>
+        <a href="https://x.com/i/flow/login?redirect_after_login=%2FKiranRai425" target='_blank' className='inline-block border p-1 rounded-full bg-orange-400 text-white'>
           <TwitterLogo/>
         </a>
        </div>
