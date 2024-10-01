@@ -1,0 +1,7 @@
+1. Complete the setup in tailwindcss [ ]
+2. create complete ui components [ ]
+3. Setup redux for state management [ ]
+4. use local storage to save data [ ]
+5. code responsive design [ ]
+6. test it using jest [ ]
+7. deploy it to vercel [ ]
