@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className='flex items-center justify-between bg-gray-800 py-4 rounded-md px-2 text-white'>
       <h1 className='flex items-center justify-center gap-2 font-bold'>
         <User/>
-        <span>Hi, Kiran Rai</span>
+        <span>Task Manager</span>
       </h1>
       <Bell/>
     </nav>
