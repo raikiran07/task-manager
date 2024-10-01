@@ -26,7 +26,7 @@ const TotalCard = () => {
     <div className='border flex bg-white md:bg-transparent items-center justify-between p-4 rounded-lg mt-3 lg:mt-[-30px] shadow-customShadow md:p-0 md:border-none md:shadow-none lg:justify-start md:gap-1 lg:gap-2'>
         <div className="total text-center md:min-w-[120px] lg:min-w-[120px] md:border md:p-6 rounded-md md:shadow-customShadow relative bg-white md:hover:translate-y-[-10px] md:transition-all md:ease-linear cursor-pointer">
             <h2 className='text-4xl font-semibold'>{`${total < 10 ? '0' : ''}`}{total}</h2>
-            <p className='text-gray-400 text-xs md:text-base '>Total</p>
+            <p className='opacity-50 text-xs md:text-base '>Total</p>
             <div className='absolute top-[-3px] left-0 md:top-2 md:left-2 w-2 h-2 bg-gray-400 rounded-full shadow-md shadow-gray-300'></div> 
         </div>
         <div className="pending p-2 md:min-w-[120px] text-center lg:min-w-[120px] md:border md:p-6 md:rounded-md md:shadow-customShadow relative md:bg-red-100 md:text-red-600 md:hover:translate-y-[-10px] md:transition-all md:ease-linear cursor-pointer">
