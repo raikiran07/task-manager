@@ -50,7 +50,7 @@ const UpcomingTask = () => {
             }
             {
               upcomingList.map(task=>{
-                return <p className="before:content-[''] relative before:w-1 before:h-5 before:bg-red-400 before:absolute before:left-[-8px] before:bottom-0 mt-1 ml-2 before:rounded-md text-gray-400">
+                return <p className="text-xxs md:text-xs before:content-[''] relative before:w-1 before:h-4 before:bg-red-400 before:absolute before:left-[-8px] before:bottom-0 mt-1 ml-2 before:rounded-md text-gray-400">
                   {
                     task.title
                   }
