@@ -59,7 +59,7 @@ const formatDate = (dateString) => {
     <div>
 
 
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-6 mb-6 max-h-[330px] md:max-h-[600px] overflow-y-auto z-10">
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-6 mb-6 max-h-[330px] md:max-h-[600px] overflow-y-auto z-10 rounded-lg">
     <table class="w-full text-xs text-left rtl:text-right rounded-lg">
         <thead class="text-xs  uppercase text-white    bg-gray-800 sticky top-0">
             <tr>

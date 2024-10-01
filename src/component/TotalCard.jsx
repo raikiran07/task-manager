@@ -42,7 +42,7 @@ const TotalCard = () => {
         <div className="completed md:min-w-[120px] lg:min-w-[120px] text-center md:border md:p-6 md:rounded-md md:shadow-customShadow relative md:bg-green-100 md:hover:translate-y-[-10px] md:transition-all md:ease-linear cursor-pointer md:text-green-600">
             <h2 className='text-4xl font-semibold'>{`${completed < 10 ? '0' : ''}`}{completed}</h2>
             <p className='opacity-50 text-xs md:text-base '>Completed</p>
-            <div className='absolute top-0 left-3 md:top-2 md:left-2 w-2 h-2 bg-green-400 rounded-full shadow-md shadow-green-300'></div>
+            <div className='absolute top-[-3px] left-3 md:top-2 md:left-2 w-2 h-2 bg-green-400 rounded-full shadow-md shadow-green-300'></div>
         </div>
     </div>
   )
