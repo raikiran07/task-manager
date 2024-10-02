@@ -4,6 +4,7 @@ import { remove } from '../store/taskSlice'
 import { deleteItem } from '../store/deleteSlice'
 
 
+// Delete model
 const DeleteModel = ({setIsDelete}) => {
 
   const dispatch = useDispatch()

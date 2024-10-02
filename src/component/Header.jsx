@@ -4,6 +4,7 @@ import WomanImage from '../assets/woman-icon.png'
 import UpcomingTask from './UpcomingTask'
 import AddTaskButton from './AddTaskButton'
 
+// Header component with just a title and an image align in flex
 const Header = ({setIsModel}) => {
   return (
     <header className='items-start justify-between gap-1 mt-2 hidden md:flex'>

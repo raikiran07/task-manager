@@ -2,6 +2,7 @@ import React from 'react'
 import { Bell } from '@phosphor-icons/react'
 import { User } from '@phosphor-icons/react'
 
+// Navbar component
 const Navbar = () => {
   return (
     <nav className='flex items-center justify-between bg-gray-800 py-4 rounded-md px-2 text-white'>

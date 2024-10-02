@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { saveToLocalStorage } from '../util/utils';
 
 
-
+// Model to add new task
 const AddModal = ({setIsModel,isEdit,setFilter,toast}) => {
     const dispatch = useDispatch()
     const taskList = useSelector(state=>state.taskList);

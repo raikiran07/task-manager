@@ -3,6 +3,7 @@ import { MagnifyingGlass } from '@phosphor-icons/react'
 import { FunnelSimple } from '@phosphor-icons/react'
 import { useRef } from 'react'
 
+// Search and filter component
 export const SearchBar = ({search,setSearch,filter,setFilter}) => {
   const inputRef = useRef(null)
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { Dot } from '@phosphor-icons/react'
 
+// Card component to show total number of task, pending task etc
 const TotalCard = () => {
   const [total,setTotal] = useState(null)
   const [pending,setPending] = useState(null)

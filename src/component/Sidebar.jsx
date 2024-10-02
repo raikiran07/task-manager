@@ -10,6 +10,7 @@ import { LinkedinLogo } from '@phosphor-icons/react'
 import { TwitterLogo } from '@phosphor-icons/react'
 
 
+// Sidebar
 const Sidebar = ({search,setSearch,filter,setFilter}) => {
   return (
     <aside>

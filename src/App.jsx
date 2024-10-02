@@ -25,10 +25,13 @@ const [filter,setFilter] = useState("All")
 
   return (
     <div className='px-8 w-[100%] h-[100vh] overflow-hidden relative border bg-gray-100'>
+
+      {/* model is only shown when isModel is true */}
       {
         isModel && <div className="overlay"></div>
       }
     
+    {/* This is the main container which displays content in flex in desktop view and block in mobile view */}
     <div className="flex-container md:flex md:items-start md:justify-center md:gap-6">
     <div className="left-container hidden md:block md:w-[20%] min-h-[95vh] px-2 bg-white shadow-customShadow mt-4 rounded-md">
     <Sidebar setSearch={setSearch} search={search} filter={filter} setFilter={setFilter} />
@@ -55,7 +58,7 @@ const [filter,setFilter] = useState("All")
     <TaskList setIsModel={setIsModel} search={search} filter={filter} />
     
     
-
+    {/* model is only shown when isModel is true */}
     {
       isModel && <div className={`absolute transition-all ease-linear  duration-300   left-[50%]   z-50  bg-white shadow-customShadow rounded-lg ${isModel ? "translate-y-[-50%] translate-x-[-50%] top-[50%] animate-fadeIn" : "top-[150%] transition-all ease-linear duration-75"}`}>
         <AddModal setIsModel={setIsModel} setFilter={setFilter} toast={toast} />
@@ -64,17 +67,19 @@ const [filter,setFilter] = useState("All")
 
     <AddbuttonMobile setIsModel={setIsModel}/>
 
+    {/* Toastcontainer to notify user about the updates */}
+
     <ToastContainer
-position="top-center"
-autoClose={5000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="light"
+      position="top-center"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="light"
 
 
 />
@@ -82,21 +87,6 @@ theme="light"
    </div>
     </div>
 
-   
-    
-     
-    
-    
-   
-
-    {/* delete model */}
-    {/* {
-      isDelete && <div className={`absolute transition-all ease-linear  duration-300   left-[50%]  translate-x-[-50%]  z-50  bg-white shadow-customShadow rounded-lg ${isDelete ? "translate-y-[-50%] top-[50%]" : "top-[150%] transition-all ease-linear duration-75"}`}>
-      <DeleteModel setIsDelete={setIsDelete}/>
-    </div>
-
-    } */}
-    
    
       
     </div>

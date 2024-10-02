@@ -3,6 +3,7 @@ import { FaOtter } from 'react-icons/fa'
 import { Plus } from '@phosphor-icons/react'
 import BtnImage from '../assets/btn-image.png'
 
+// Basic button to show model in tab and desktop view
 const AddTaskButton = ({setIsModel}) => {
   const handleOn = () => {
     setIsModel(true)

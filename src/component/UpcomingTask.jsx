@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { sortByDueDate } from '../util/utils';
 
+
+// Card component to show present date and upcoming tasks
 const UpcomingTask = () => {
   const date = new Date().getDate()
   const tasks = useSelector(state=>state.taskList)

@@ -9,7 +9,7 @@ import { PencilSimple } from '@phosphor-icons/react'
 import { setEditId } from '../store/editSlice'
 import { sortByDueDate } from '../util/utils'
 
-
+// Table component to show available tasks
 const TaskList = ({setIsModel,search,filter}) => {
 const tasks = useSelector(state=>state.taskList)
 
