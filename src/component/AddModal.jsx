@@ -33,6 +33,15 @@ const AddModal = ({setIsModel,isEdit,setFilter,toast}) => {
         dispatch(setEditId(null))
     }
 
+    // Helper function to get today's date in YYYY-MM-DD format
+  const getCurrentDate = () => {
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0'); // Months start at 0
+    const dd = String(today.getDate()).padStart(2, '0');
+    return `${yyyy}-${mm}-${dd}`;
+  };
+
     const handleAdd = (e) => {
         e.preventDefault();
         // const readableDate = formatDate(task.dueDate);
@@ -64,6 +73,13 @@ const AddModal = ({setIsModel,isEdit,setFilter,toast}) => {
             const listLength = taskList.length;
         const newId = listLength > 0 ? taskList[listLength-1]["id"] + 1 : 1;
         task.id = newId;
+         // Check if the selected date is before the current date
+    if (new Date(task.dueDate) < new Date(getCurrentDate())) {
+        console.log("error")
+        toast.error("Task cannot be set in the past")
+        return;
+      }
+      else{
         dispatch(add(task));
         setIsModel(false);
         saveToLocalStorage(taskList)
@@ -74,6 +90,8 @@ const AddModal = ({setIsModel,isEdit,setFilter,toast}) => {
         saveToLocalStorage(tasks)
         toast.success("task added successfully")
         }
+      }
+       
 
         
         

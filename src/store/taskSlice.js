@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import taskList from "../data";
 import { loadTasks } from "../util/utils";
 
 
