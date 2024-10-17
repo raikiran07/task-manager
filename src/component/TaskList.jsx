@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux'
 import { remove } from '../store/taskSlice'
 import { PencilSimple } from '@phosphor-icons/react'
 import { setEditId } from '../store/editSlice'
-import { sortByDueDate } from '../util/utils'
+import { sortByDueDate,saveToLocalStorage } from '../util/utils'
 
 // Table component to show available tasks
 const TaskList = ({setIsModel,search,filter}) => {
@@ -42,6 +42,10 @@ const formatDate = (dateString) => {
     const userDecision = confirm("Do you want to delete?")
     if(userDecision){
         dispatch(remove(id))
+        const newTaskList = taskList.filter(task=>task.id!=id)
+        console.log(newTaskList)
+        saveToLocalStorage(newTaskList)
+    
     }
     
    

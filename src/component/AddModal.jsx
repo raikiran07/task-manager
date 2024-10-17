@@ -10,8 +10,8 @@ const AddModal = ({setIsModel,isEdit,setFilter,toast}) => {
     const dispatch = useDispatch()
     const taskList = useSelector(state=>state.taskList);
     const {editId} = useSelector(state=>state.editItem)
-    console.log(editId)
-    console.log(isEdit)
+    // console.log(editId)
+    // console.log(isEdit)
     
     const [task,setTask] = useState({
         id:"",

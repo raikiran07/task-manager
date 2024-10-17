@@ -7,8 +7,8 @@ import { sortByDueDate } from '../util/utils';
 const UpcomingTask = () => {
   const date = new Date().getDate()
   const tasks = useSelector(state=>state.taskList)
-  console.log("task from store")
-  console.log(tasks)
+  // console.log("task from store")
+  // console.log(tasks)
  
 
   const sortedTaskList = sortByDueDate(tasks);
@@ -32,7 +32,7 @@ const UpcomingTask = () => {
         }
       }
     }
-    console.log(list)
+    // console.log(list)
     // const list = tasks.slice(0,2).filter(task=>task.status=="Pending" || task.status=="In Progress")
     setUpcomingList(list)
   },[tasks])
@@ -52,7 +52,7 @@ const UpcomingTask = () => {
             }
             {
               upcomingList.map(task=>{
-                return <p className="text-xxs md:text-xs before:content-[''] relative before:w-1 before:h-4 before:bg-red-400 before:absolute before:left-[-8px] before:bottom-0 mt-1 ml-2 before:rounded-md text-gray-400">
+                return <p className="text-xxs md:text-xs before:content-[''] relative before:w-1 before:h-4 before:bg-red-400 before:absolute before:left-[-8px] before:bottom-0 mt-1 ml-2 before:rounded-md text-gray-400" key={task.id}>
                   {
                     task.title
                   }
