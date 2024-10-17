@@ -22,7 +22,7 @@ const dispatch = useDispatch()
   const taskList = sortByDueDate(tasks);
   
   const filteredTaskList = filter == "All" ? taskList : taskList.filter(task=>task.status==filter)
-  console.log(filteredTaskList)
+//   console.log(filteredTaskList)
 
 
 
@@ -43,7 +43,7 @@ const formatDate = (dateString) => {
     if(userDecision){
         dispatch(remove(id))
         const newTaskList = taskList.filter(task=>task.id!=id)
-        console.log(newTaskList)
+        // console.log(newTaskList)
         saveToLocalStorage(newTaskList)
     
     }
