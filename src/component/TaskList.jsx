@@ -54,7 +54,7 @@ const formatDate = (dateString) => {
 
   const handleEdit = (id) => {
     setIsModel(true)
-    console.log("hello")
+    // console.log("hello")
     dispatch(setEditId(id))
   }
 

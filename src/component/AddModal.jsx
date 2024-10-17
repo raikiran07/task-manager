@@ -48,7 +48,7 @@ const AddModal = ({setIsModel,isEdit,setFilter,toast}) => {
         // task.dueDate = readableDate
 
         if(editId){
-            console.log(task)
+            // console.log(task)
             dispatch(update(task));
             dispatch(setEditId(null))
             setIsModel(false);
